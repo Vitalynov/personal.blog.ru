@@ -1,0 +1,31 @@
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 1.2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.2;
+	background-color: darkslategrey;
+	padding: 1.3rem 2.5rem;
+	border-radius: 2.5rem;
+	color: $white;
+	box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.25);
+    transition: background-color 0.3s linear;
+}
+.btn--red {
+	background-color: #cd251a;
+	
+	&:hover {
+		background-color: darken(#cd251a, 10%);
+		//background-color:#960b01;
+	}
+}
+.btn--blue {
+	background-color: #3137c9;
+    &:hover {
+		background-color: darken(#3137c9, 10%);
+		//background-color:#960b01;
+	}
+}

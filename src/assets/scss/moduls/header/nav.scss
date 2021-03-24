@@ -1,0 +1,46 @@
+.nav__list {
+	display: flex;
+}
+.nav__item{
+    position: relative;
+    &:hover{
+        .nav__link{
+            background-color: $link-header;
+        }
+        &>.subnav{
+            display: block;
+        }
+    }
+}
+.nav__link {
+	display: block;
+	padding: 1.35rem 1.5rem;
+
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.3rem;
+	color: $title;
+	transition: background-color 0.3s linear;
+	
+	&.has-subnav {
+        position: relative;
+        padding-right: 3rem;
+		&::after {
+			content: '';
+            position: absolute;
+			display: block;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+
+			border-style: solid;
+			border-width: 6px 5px 0 5px;
+			border-color: #ffffff transparent transparent transparent;
+		}
+	}
+}
+
+.header__right {
+}

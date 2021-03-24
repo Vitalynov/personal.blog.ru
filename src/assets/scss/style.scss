@@ -1,0 +1,36 @@
+@import './add/vender/_normolize';
+@import './add/vars/_vars';
+@import './add/vars/_mixin';
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: black;
+	font-size: 1.4rem;
+	color: $title;
+	font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+		Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
+		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+$maxWidth: 70rem;
+$padding: 5rem;
+.container {
+	@include container($maxWidth, $padding);
+}
+
+@import './moduls/page';
+/* Header */
+@import './moduls/header/header';
+@import './moduls/header/nav';
+@import './moduls/header/search';
+@import './moduls/header/subnav';
+/*  Sitebar  */
+@import './moduls/sidebar/sitebar';
+@import './moduls/sidebar/profile';
+@import './moduls/sidebar/social';
+@import './moduls/sidebar/btn';
+/* Main */
+@import './moduls/main/main';

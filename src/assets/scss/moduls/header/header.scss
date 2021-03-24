@@ -1,0 +1,24 @@
+.header {
+	display: flex;
+	align-items: center;
+	width: calc(100% - #{$sitebar-width});
+	position: fixed;
+	top: 0;
+	right: 0;
+	//height: 40px;
+	z-index: 1000;
+	background-color: #0d0d0d;
+	box-shadow: 0 5px 22px rgba(#000, .25);
+	&__left{
+		flex: 0 1 60%;
+	}
+	&__right{
+		flex: 0 1 40%;
+	}
+}
+
+.header__right{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
