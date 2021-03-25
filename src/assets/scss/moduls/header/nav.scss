@@ -3,12 +3,14 @@
 }
 .nav__item{
     position: relative;
+	
     &:hover{
         .nav__link{
             background-color: $link-header;
         }
         &>.subnav{
-            display: block;
+            visibility: visible;
+			opacity: 1;
         }
     }
 }
