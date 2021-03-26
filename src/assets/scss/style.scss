@@ -14,6 +14,12 @@ body {
 		Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
 		'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
+a {
+	color:inherit;
+	&:hover {
+		text-decoration: underline;
+	}
+}
 
 $maxWidth: 70rem;
 $padding: 5rem;
@@ -39,3 +45,6 @@ $padding: 5rem;
 @import './moduls/main/post';
 @import './moduls/main/embed';
 @import './moduls/main/pagination';
+@import './moduls/main/related';
+@import './moduls/main/comments';
+@import './moduls/main/form';

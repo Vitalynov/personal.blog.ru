@@ -22,7 +22,8 @@
 	line-height: 14px;
     transition: background-color .3s linear;
     &:hover{
-        background-color: darken($link-header, 10%)
+        background-color: darken($link-header, 10%);
+		text-decoration: none;
     }
 
 }

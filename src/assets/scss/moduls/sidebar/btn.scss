@@ -19,6 +19,7 @@
 	
 	&:hover {
 		background-color: darken(#cd251a, 10%);
+		text-decoration: none;
 		//background-color:#960b01;
 	}
 }
@@ -28,4 +29,8 @@
 		background-color: darken(#3137c9, 10%);
 		//background-color:#960b01;
 	}
+}
+.btn--rounded{
+	border-radius: .5rem;
+	padding: .8rem 1.5rem;
 }
