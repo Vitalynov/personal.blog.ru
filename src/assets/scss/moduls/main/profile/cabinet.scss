@@ -1,0 +1,41 @@
+.cabinet {
+	display: flex;
+}
+.cabinet__form {
+	flex: 0 0 340px;
+}
+.cabinet__avatar {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	&--img {
+		//display: inline-block;
+		margin-left: auto;
+		width: 15rem;
+		height: 15rem;
+		overflow: hidden;
+        margin-bottom: 1.5rem
+	}
+	& > img {
+		width: 100%;
+		object-fit: cover;
+	}
+    
+}
+.cabinet__file {
+	input {
+		display: none;
+	}
+
+    margin-left: auto;
+    cursor: pointer;
+    padding-right: 3.5rem;
+
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: $link;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}

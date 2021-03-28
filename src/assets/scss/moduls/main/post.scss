@@ -5,6 +5,18 @@
 	background-color: $primery;
 	border-radius: 5px;
 }
+.post__action--img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: .5rem;
+	margin-left: -.5rem;
+	&>img{
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+}
 .post__header {
 	overflow: hidden;
 	margin: 0 0 2.5rem 0;

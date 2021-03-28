@@ -13,14 +13,15 @@
 	color: $white;
 	box-shadow: 0 0.4rem 0.4rem rgba(#000, 0.25);
     transition: background-color 0.3s linear;
+	&:hover{
+		text-decoration: none;
+	}
 }
 .btn--red {
 	background-color: #cd251a;
 	
 	&:hover {
 		background-color: darken(#cd251a, 10%);
-		text-decoration: none;
-		//background-color:#960b01;
 	}
 }
 .btn--blue {

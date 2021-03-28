@@ -21,7 +21,7 @@ a {
 	}
 }
 
-$maxWidth: 70rem;
+$maxWidth: 60rem;
 $padding: 5rem;
 .container {
 	@include container($maxWidth, $padding);
@@ -48,3 +48,8 @@ $padding: 5rem;
 @import './moduls/main/related';
 @import './moduls/main/comments';
 @import './moduls/main/form';
+@import './moduls/main/works';
+@import './moduls/main/tags';
+@import './moduls/main/search';
+/* Профайл */
+@import './moduls/main/profile/cabinet';
